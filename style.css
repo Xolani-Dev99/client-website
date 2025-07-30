@@ -15,11 +15,9 @@ header {
 }
 
 .logo {
-    max-width: 100%;
-    height: auto;
-    width: 180px;
-    display: block;
-    margin: 0 auto 10px auto;
+    max-height: auto;
+    width : 200px;
+    margin-bottom: 0px;
 }
 
 .slogan {
@@ -71,7 +69,6 @@ header {
     transform: scale(1.02);
 }
 
-/* Gallery */
 .gallery {
     padding: 20px;
     text-align: center;
@@ -82,24 +79,19 @@ header {
 }
 
 .images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
-    justify-items: center;
 }
 
 .images img {
     width: 100%;
-    max-width: 200px;
-    height: auto;
+    max-width: 220px;     /* Consistent max width */
+    height: auto;         /* Keeps natural aspect ratio */
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     object-fit: cover;
-    transition: transform 0.2s ease;
-}
-
-.images img:hover {
-    transform: scale(1.05);
 }
 
 /* Footer */
