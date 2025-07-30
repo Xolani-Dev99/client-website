@@ -17,11 +17,10 @@ header {
 .logo {
     max-width: 100%;
     height: auto;
-    width: 180px;  /* You can tweak this if needed */
+    width: 180px;
     display: block;
-    margin: 0 auto 10px auto; /* Center the logo and add spacing */
+    margin: 0 auto 10px auto;
 }
-
 
 .slogan {
     font-style: italic;
@@ -72,6 +71,7 @@ header {
     transform: scale(1.02);
 }
 
+/* Gallery - reverted to original flex layout */
 .gallery {
     padding: 20px;
     text-align: center;
@@ -95,13 +95,9 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     object-fit: cover;
-    transition: transform 0.2s ease;
 }
 
-.images img:hover {
-    transform: scale(1.05);
-}
-
+/* Footer */
 footer {
     background-color: #444;
     color: white;
@@ -109,7 +105,7 @@ footer {
     padding: 10px;
 }
 
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -117,8 +113,7 @@ footer {
     }
 
     .logo {
-        width: 150px;
-        max-height: 100px;
+        width: 140px;
     }
 
     header h1 {
@@ -134,15 +129,6 @@ footer {
         padding: 15px;
         margin: 10px;
         box-shadow: none;
-    }
-
-    .images {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .images img {
-        max-width: 90%;
     }
 
     .services li {
