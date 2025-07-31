@@ -1,10 +1,12 @@
 /* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f9f9f9;
     color: #333;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 header {
@@ -12,29 +14,30 @@ header {
     padding: 20px;
     text-align: center;
     color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    letter-spacing: 1.2px;
 }
 
 .logo {
-    max-height: auto;
-    width : 200px;
-    margin-bottom: 0px;
+    width: 200px;
+    margin-bottom: 0;
 }
 
 .slogan {
     font-style: italic;
-    font-size: 16px;
+    font-size: 1.1rem;
     color: #f5f5f5;
-    margin-top: -10px;
+    margin-top: 4px;
+    letter-spacing: 0.8px;
 }
 
-.info {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about, .hours, .services {
+.info, .about, .hours, .services {
     background-color: #ffffff;
     padding: 20px;
     margin: 10px auto;
@@ -42,26 +45,32 @@ header {
     width: 90%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
+    font-size: 1.05rem;
 }
 
 .about h2, .hours h2, .services h2 {
     color: #444;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
 }
 
 .services ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
 
 .services li {
     background: #88c9bf;
     margin: 8px 0;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
     transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
 }
 
 .services li:hover {
@@ -76,6 +85,10 @@ header {
 
 .gallery h2 {
     margin-bottom: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 }
 
 .images {
@@ -87,10 +100,10 @@ header {
 
 .images img {
     width: 100%;
-    max-width: 220px;     /* Consistent max width */
-    height: auto;         /* Keeps natural aspect ratio */
+    max-width: 220px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     object-fit: cover;
 }
 
@@ -100,36 +113,149 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive Nav Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #88c9bf;
+    color: white;
+}
+
+.navbar-links a.active {
+  background-color: #88c9bf;
+  color: #fff;
+  font-weight: 600;
+}
+
+.centered-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.contact-container {
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.nav-logo img {
+  height: 70px;  /* Adjust this value to fit your navbar nicely */
+  width: auto;   /* Maintain aspect ratio */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+
+
+/* Toggle Button for Mobile */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-        padding: 10px;
+    .toggle-button {
+        display: flex;
     }
 
-    .logo {
-        width: 140px;
+    .navbar-links {
+        display: none;
+        width: 100%;
     }
 
-    header h1 {
-        font-size: 22px;
+    .navbar-links.active {
+        display: block;
     }
 
-    .slogan {
-        font-size: 14px;
-        margin-top: 0;
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        gap: 10px;
     }
 
-    .about, .hours, .services, .info {
-        padding: 15px;
-        margin: 10px;
-        box-shadow: none;
-    }
-
-    .services li {
-        font-size: 14px;
-        padding: 8px;
+    .navbar-links a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
     }
 }
