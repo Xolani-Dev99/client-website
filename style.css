@@ -1,10 +1,10 @@
 /* Base Styles */
 body {
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Bison', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f9f9f9;
-    color: #333;
+    color: maroon;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -18,7 +18,7 @@ header {
     padding: 20px;
     text-align: center;
     color: white;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Bison', Arial, sans-serif;
     font-weight: 600;
 }
 
@@ -43,11 +43,8 @@ header h1 {
 
 .info, .about, .hours, .services {
     background-color: white; /* You may remove this if the image fully covers the background */
-    background-image: url('images/background2.jpg'); /* <-- Add your image URL here */
-    background-size: cover; /* Cover the entire container */
-    background-position: top; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image from repeating */
     
+
     padding: 20px;
     margin: 10px auto;
     max-width: 100%;
@@ -59,12 +56,10 @@ header h1 {
 
 
 
-
-
 .about h2, .hours h2, .services h2 {
-    color: #444;
+    color: green;
     margin-bottom: 12px;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Bison', Arial, sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
     letter-spacing: 1px;
@@ -110,7 +105,7 @@ main {
 
 .gallery h2 {
     margin-bottom: 20px;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Bison', Arial, sans-serif;
     font-weight: 600;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -138,7 +133,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Bison', Arial, sans-serif;
     font-size: 0.9rem;
 }
 
@@ -189,7 +184,7 @@ footer {
 .navbar-links a {
     text-decoration: none;
     font-weight: 500;
-    color: #333;
+    color: maroon;
     padding: 8px 12px;
     border-radius: 4px;
     transition: background 0.3s ease, color 0.3s ease;
@@ -215,12 +210,6 @@ footer {
 }
 
 .contact-container {
-
-  background-color: white; /* You may remove this if the image fully covers the background */
-  background-image: url('images/background2.jpg'); /* <-- Add your image URL here */
-  background-size: cover; /* Cover the entire container */
-  background-position: right; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image from repeating */
 
   max-width: 600px;
   background-color: #ffffff;
