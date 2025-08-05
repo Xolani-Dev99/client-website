@@ -10,6 +10,10 @@ body {
 }
 
 header {
+    background-image: url('images/background3.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
     background-color: rgba(255, 102, 102, 1);
     padding: 20px;
     text-align: center;
@@ -38,7 +42,12 @@ header h1 {
 }
 
 .info, .about, .hours, .services {
-    background-color: #ffffff;
+    background-color: white; /* You may remove this if the image fully covers the background */
+    background-image: url('images/background2.jpg'); /* <-- Add your image URL here */
+    background-size: cover; /* Cover the entire container */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    
     padding: 20px;
     margin: 10px auto;
     max-width: 100%;
@@ -47,6 +56,9 @@ header h1 {
     border-radius: 8px;
     font-size: 1.05rem;
 }
+
+
+
 
 
 .about h2, .hours h2, .services h2 {
@@ -203,6 +215,13 @@ footer {
 }
 
 .contact-container {
+
+  background-color: white; /* You may remove this if the image fully covers the background */
+  background-image: url('images/background2.jpg'); /* <-- Add your image URL here */
+  background-size: cover; /* Cover the entire container */
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+
   max-width: 600px;
   background-color: #ffffff;
   padding: 30px;
