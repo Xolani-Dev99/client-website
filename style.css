@@ -56,7 +56,7 @@ header h1 {
 
 
 
-.about h2, .hours h2, .services h2 {
+.contact-container h2, .about h2, .hours h2, .services h2 {
     color: green;
     margin-bottom: 12px;
     font-family: 'Bison', Arial, sans-serif;
@@ -70,7 +70,7 @@ header h1 {
 main {
   background-image: url('images/background.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top-right;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
