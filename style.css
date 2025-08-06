@@ -66,6 +66,12 @@ header h1 {
 }
 
 
+.about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
 
 main {
   background-image: url('images/background.jpg');
@@ -78,7 +84,7 @@ main {
 }
 
 .services ul {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0;
 }
 
